@@ -1,0 +1,6 @@
+{
+  "name": "ULTRA MEGA FLUX",
+  "description": "BEYOND THE BOUNDARIES OF REALITY. A premium futuristic portal with private member authentication, invitation registration, and administrator link management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Environment constraint: HMR is disabled in AI Studio. Suppress WebSocket close rejections.
+      window.addEventListener('unhandledrejection', function(e) {
+        if (e && e.reason) {
+          var msg = e.reason.message || String(e.reason);
+          if (
+            msg.indexOf('WebSocket') !== -1 ||
+            msg.indexOf('createWebSocketModuleRunnerTransport') !== -1 ||
+            msg.indexOf('vite:ws') !== -1
+          ) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+          }
+        }
+      });
+    </script>
+    <title>ULTRA MEGA FLUX — BEYOND THE BOUNDARIES OF REALITY</title>
+    <meta name="description" content="ULTRA MEGA FLUX: Beyond the Boundaries of Reality. Private member gateway and link portal." />
+    <meta property="og:title" content="ULTRA MEGA FLUX — BEYOND THE BOUNDARIES OF REALITY" />
+    <meta property="og:description" content="ULTRA MEGA FLUX: Beyond the Boundaries of Reality. Private member gateway and link portal." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

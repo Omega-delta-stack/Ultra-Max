@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --font-orbitron: 'Orbitron', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-syne: 'Syne', sans-serif;
+  --font-outfit: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: #030308;
+  color: #e2e8f0;
+  font-family: var(--font-outfit);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-orbitron {
+  font-family: var(--font-orbitron);
+}
+
+.font-syne {
+  font-family: var(--font-syne);
+}
+
+.font-outfit {
+  font-family: var(--font-outfit);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Cosmic glows & glassmorphism */
+.glass-panel {
+  background: rgba(10, 11, 24, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-elevated {
+  background: rgba(15, 17, 36, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  box-shadow: 0 0 35px -5px rgba(124, 58, 237, 0.15), 0 0 20px -5px rgba(6, 182, 212, 0.15);
+}
+
+.glow-text-cyan {
+  text-shadow: 0 0 20px rgba(6, 182, 212, 0.6), 0 0 40px rgba(6, 182, 212, 0.3);
+}
+
+.glow-text-purple {
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.6), 0 0 40px rgba(168, 85, 247, 0.3);
+}
+
+.glow-border-cyan {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.25);
+}
+
+.glow-border-purple {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.25);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030308;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.6);
+}
